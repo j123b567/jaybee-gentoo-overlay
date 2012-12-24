@@ -1,0 +1,20 @@
+diff -ru w9wm-0.4.2.orig.old/error.c w9wm-0.4.2.orig.new/error.c
+--- w9wm-0.4.2.orig.old/error.c	2000-12-06 12:02:11.000000000 +0100
++++ w9wm-0.4.2.orig.new/error.c	2007-09-30 14:55:34.000000000 +0200
+@@ -1,5 +1,6 @@
+ /* Copyright (c) 1994 David Hogan, see README for licence details */
+ #include <stdio.h>
++#include <stdlib.h>
+ #include <X11/X.h>
+ #include <X11/Xlib.h>
+ #include <X11/Xutil.h>
+diff -ru w9wm-0.4.2.orig.old/menu.c w9wm-0.4.2.orig.new/menu.c
+--- w9wm-0.4.2.orig.old/menu.c	2003-08-01 16:02:18.000000000 +0200
++++ w9wm-0.4.2.orig.new/menu.c	2007-09-30 14:55:48.000000000 +0200
+@@ -1,5 +1,6 @@
+ /* Copyright (c) 1994 David Hogan, 2000 Benjamin Drieu, see README for licence details */
+ #include <stdio.h>
++#include <stdlib.h>
+ #include <unistd.h>
+ #include <unistd.h>
+ #include <sys/types.h>

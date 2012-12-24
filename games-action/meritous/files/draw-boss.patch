@@ -1,0 +1,12 @@
+diff -ur meritous.orig/src/boss.c meritous_v12_src/src/boss.c
+--- meritous.orig/src/boss.c	2009-03-05 23:30:49.000000000 +0100
++++ meritous_v12_src/src/boss.c	2009-03-05 23:32:24.000000000 +0100
+@@ -692,7 +692,7 @@
+ 			} else {
+ 				if (dist(tail_x[0], tail_y[0], boss_x, boss_y) >= 24) {
+ 					if (boss_tail_len < 10) boss_tail_len++;
+-					for (i = 9; i >= 0; i--) {
++					for (i = 8; i >= 0; i--) {
+ 						tail_x[i+1] = tail_x[i];
+ 						tail_y[i+1] = tail_y[i];
+ 					}

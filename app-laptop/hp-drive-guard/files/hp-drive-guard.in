@@ -1,0 +1,27 @@
+#!/sbin/runscript
+# Copyright (c) 2011 Jan Breuer <jan.breuer@jaybee.cz>
+# Distributed under the terms of the GNU General Purpose License v2
+# $Header: $
+
+depend() {
+   need dbus
+}
+
+DAEMON=@sbindir@/hp-drive-guard-daemon
+PIDFILE=/var/run/hp-drive-guard-daemon.pid
+
+
+start() {
+   ebegin "Starting HP 3D Drive Guard"
+   start-stop-daemon --start -b -m --quiet --pidfile ${PIDFILE} \
+      --exec ${DAEMON}
+   eend $?
+}
+
+stop() {
+   ebegin "Stopping HP 3D Drive Guard"
+   start-stop-daemon --stop --quiet --pidfile ${PIDFILE}
+   eend $?
+}
+
+# vim: set ft=gentoo-init-d ts=3 sw=3 et:

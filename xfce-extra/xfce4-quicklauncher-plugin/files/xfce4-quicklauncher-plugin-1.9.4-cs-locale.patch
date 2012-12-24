@@ -1,0 +1,63 @@
+diff -ur xfce4-quicklouncher-plugin-1.9.4.original/po/cs.po xfce4-quicklauncher-plugin-1.9.4/po/cs.po
+--- xfce4-quicklouncher-plugin-1.9.4.original/po/cs.po	2007-06-08 22:31:08.000000000 +0200
++++ xfce4-quicklauncher-plugin-1.9.4/po/cs.po	2008-11-16 11:22:44.000000000 +0100
+@@ -26,27 +26,27 @@
+ 
+ #: ../panel-plugin/callbacks.c:123
+ msgid "Espace entre les lanceurs :"
+-msgstr ""
++msgstr "Mezery mezi ikonami"
+ 
+ #: ../panel-plugin/callbacks.c:131
+ msgid "afficher les tooltips"
+-msgstr ""
++msgstr "zobrazit bublinovou nápovědu"
+ 
+ #: ../panel-plugin/callbacks.c:135
+ msgid "afficher les labels"
+-msgstr ""
++msgstr "zobrazit popisky"
+ 
+ #: ../panel-plugin/callbacks.c:216
+ msgid "icone"
+-msgstr "ikona"
++msgstr "Ikona"
+ 
+ #: ../panel-plugin/callbacks.c:222
+ msgid "commande"
+-msgstr "p59kay"
++msgstr "Příkaz"
+ 
+ #: ../panel-plugin/callbacks.c:228
+ msgid "nom"
+-msgstr ""
++msgstr "Popis"
+ 
+ #: ../panel-plugin/callbacks.c:327
+ msgid "Open icon"
+@@ -66,20 +66,20 @@
+ 
+ #: ../panel-plugin/main.c:320
+ msgid "Lock"
+-msgstr ""
++msgstr "Uzamknout"
+ 
+ #: ../panel-plugin/main.c:323
+ msgid "Parameters"
+-msgstr ""
++msgstr "Parametry"
+ 
+ #: ../panel-plugin/main.c:326
+ msgid "Applications"
+-msgstr ""
++msgstr "Aplikace"
+ 
+ #: ../panel-plugin/main.c:329
+ msgid "Help"
+-msgstr ""
++msgstr "Nápověda"
+ 
+ #: ../panel-plugin/quicklauncher.desktop.in.in.h:1
+ msgid "Program with several launchers"
+-msgstr "Mnoho spouštěč; v jednom"
++msgstr "Mnoho spouštěčů v jednom"
