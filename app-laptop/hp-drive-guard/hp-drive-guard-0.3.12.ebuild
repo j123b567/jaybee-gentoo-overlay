@@ -4,7 +4,7 @@
 
 EAPI=4
 
-inherit libtool autotools
+inherit libtool autotools eutils
 
 
 DESCRIPTION="HP 3D Drive Guard - Hard disk protection system"
