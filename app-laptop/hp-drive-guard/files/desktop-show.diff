@@ -1,0 +1,9 @@
+diff -ur hp-drive-guard-0.3.12/src/hp-drive-guard-client.desktop hp-drive-guard-0.3.12-new/src/hp-drive-guard-client.desktop
+--- hp-drive-guard-0.3.12/src/hp-drive-guard-client.desktop	2010-05-07 14:26:39.000000000 +0200
++++ hp-drive-guard-0.3.12-new/src/hp-drive-guard-client.desktop	2012-12-24 23:53:24.000000000 +0100
+@@ -6,5 +6,4 @@
+ Exec=hp-drive-guard-client
+ Terminal=false
+ Type=Application
+-OnlyShowIn=GNOME;LXDE;
+ X-GNOME-Autostart-enabled=true
