@@ -5,7 +5,7 @@
 
 inherit eutils toolchain-funcs
 
-PATCHLEVEL=19
+PATCHLEVEL=23
 DESCRIPTION="Standard Linux telnet client + SSL"
 HOMEPAGE="ftp://ftp.uk.linux.org/pub/linux/Networking/netkit/"
 # http://packages.debian.org/stablesource/netkit-telnet-ssl
@@ -15,7 +15,7 @@ http://ftp.debian.org/debian/pool/main/n/netkit-telnet-ssl/netkit-telnet-ssl_0.1
 
 LICENSE="BSD"
 SLOT="0"
-KEYWORDS="~alpha ~amd64 ~arm ~hppa ~ia64 ~mips ~ppc ~ppc64 ~sparc ~x86"
+KEYWORDS="~alpha amd64 ~arm ~hppa ~ia64 ~mips ~ppc ~ppc64 ~sparc x86"
 IUSE=""
 
 DEPEND=">=sys-libs/ncurses-5.2"
