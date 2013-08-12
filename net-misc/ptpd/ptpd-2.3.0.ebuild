@@ -36,10 +36,3 @@ src_configure() {
         $(use_enable double-servo) \
         $(use_enable debug runtime-debug)
 }
-
-#src_install() {
-#	default
-#	prune_libtool_files
-#}
-
-
