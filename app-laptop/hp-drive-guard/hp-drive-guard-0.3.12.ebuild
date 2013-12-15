@@ -23,15 +23,13 @@ DEPEND="sys-auth/polkit
     dev-libs/glib:2"
 RDEPEND="${DEPEND}"
 
-pkg_setup() {
-	PATCHES=( "${FILESDIR}"/0001-Fix-misc-compile-warnings.patch
-	 "${FILESDIR}"/0002-Fix-build-with-the-new-libnotify.patch
-	 "${FILESDIR}"/use-new-polkit.diff
-	 )
-}
 
 src_prepare() {
 	cp "${FILESDIR}/hp-drive-guard.in" "${WORKDIR}/${P}/init/"
+
+	epatch "${FILESDIR}"/0001-Fix-misc-compile-warnings.patch
+	epatch "${FILESDIR}"/0002-Fix-build-with-the-new-libnotify.patch
+	epatch "${FILESDIR}"/use-new-polkit.diff
 
 	AT_M4DIR="." eautoreconf
 	elibtoolize
