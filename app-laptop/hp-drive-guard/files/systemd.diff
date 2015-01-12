@@ -1,0 +1,40 @@
+diff -urN hp-drive-guard-0.3.12.old/init/Makefile.am hp-drive-guard-0.3.12.new/init/Makefile.am
+--- hp-drive-guard-0.3.12.old/init/Makefile.am	2010-04-19 16:31:48.000000000 +0200
++++ hp-drive-guard-0.3.12.new/init/Makefile.am	2015-01-12 13:40:02.032646374 +0100
+@@ -1,11 +1,18 @@
+ initddir = $(sysconfdir)/init.d
+ 
+-EXTRA_DIST = hp-drive-guard.in
++systemddir = /usr/lib/systemd/system
++
++EXTRA_DIST = hp-drive-guard.in hp-drive-guard.service.in
+ 
+ initd_SCRIPTS = hp-drive-guard
+ 
+-CLEANFILES = hp-drive-guard
++systemd_SCRIPTS = hp-drive-guard.service
++
++CLEANFILES = hp-drive-guard hp-drive-guard.service
+ 
+ hp-drive-guard: hp-drive-guard.in
+ 	sed -e 's,@sbindir\@,$(sbindir),g' $< > $@
+ 	chmod +x $@
++
++hp-drive-guard.service: hp-drive-guard.service.in
++	sed -e 's,@sbindir\@,$(sbindir),g' $< > $@
+diff -urN hp-drive-guard-0.3.12.old/init/hp-drive-guard.service.in hp-drive-guard-0.3.12.new/init/hp-drive-guard.service.in
+--- hp-drive-guard-0.3.12.old/init/hp-drive-guard.service.in	1970-01-01 01:00:00.000000000 +0100
++++ hp-drive-guard-0.3.12.new/init/hp-drive-guard.service.in	2015-01-12 13:37:06.193295318 +0100
+@@ -0,0 +1,12 @@
++[Unit]
++Description=HP 3D Drive Guard
++
++[Service]
++Type=dbus
++BusName=com.hp.DriveGuard
++ExecStart=@sbindir@/hp-drive-guard-daemon
++
++KillMode=process
++
++[Install]
++WantedBy=multi-user.target
