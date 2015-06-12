@@ -16,8 +16,8 @@ KEYWORDS=""
 LICENSE="BSD"
 SLOT="0"
 IUSE="snmp +statistics ntp experimental debug +pcap slave-only"
-RDEPEND="snmp? ( net-analyzer/net-snmp )
-	pcap? ( net-libs/libpcap )"
+RDEPEND="snmp? ( net-analyzer/net-snmp:= )
+	pcap? ( net-libs/libpcap:= )"
 DEPEND="${RDEPEND}"
 RDEPEND="${RDEPEND}
 	ntp? ( net-misc/ntp )"
